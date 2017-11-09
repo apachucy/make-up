@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Make up</string>
+    <string name="logo_description">Logo aplikacji</string>
+    <string name="contact_me_text">Skontaktuj się ze mną\nMój adres: Mosina,  Krotowskiego 16 A / 26</string>
+    <string name="call_info">Zadzwoń by umówić się na wizytę</string>
+    <string name="email_info">Napisz wiadomość żeby umówić się na wizytę</string>
+    <string name="app_title">Angelika Pachucy Make up</string>
+    <string name="intent_uri_call">tel:695638424</string>
+    <string name="email_address">pachuckowa@wp.pl</string>
+    <string name="intent_uri_www">https://www.facebook.com/AngelikaPachucyMakeUp/</string>
+    <string name="email_title">[Make Up] Dzień dobry chciałabym umówić się na make up</string>
+    <string name="intent_email_action">mailto:</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="unii.other.business.card.makeup.model.BusinessCardViewModel" />
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="unii.other.business.card.makeup.BusinessCardActivity">
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/logo_description"
+            app:srcCompat="@drawable/make_up_logo" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:onClick="@{viewModel::onCallClicked}"
+            app:layout_anchor="@id/image_logo"
+            app:layout_anchorGravity="bottom|end"
+            app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_margin="@dimen/fab_margin"
+            android:onClick="@{viewModel::onEmailClicked}"
+            app:layout_anchor="@id/fab_phone"
+            app:layout_anchorGravity="left"
+            app:srcCompat="@android:drawable/ic_dialog_email" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_margin="@dimen/fab_margin"
+            android:onClick="@{viewModel::onFaceBookClicked}"
+            app:layout_anchor="@id/fab_mail"
+            app:layout_anchorGravity="left"
+            app:srcCompat="@android:drawable/ic_menu_view" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>
